@@ -64,7 +64,7 @@ def main():
 ```
 
 En las primeras líneas se crean los instrumentos financieros, en este caso Acciones, después se usan para crear el portafolio. En el test se grafica las curvas de rendimiento del portafolio según la correlación entre las correlaciones.
-![curvas de rendimiento](/images/yields.png)
+![curvas de rendimiento](./images/yields.png)
 
 Por útlimo se muestra la descripción del portafolio:
 
