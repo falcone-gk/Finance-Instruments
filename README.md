@@ -16,5 +16,6 @@ El motivo de este proyecto es el de resolver ejercicios básicos de bonos y port
 ### Bonos
 En los bonos lo que se ha desarrollado es la obtención del **precio del bono** conociendo su Valor Nominal, tasa de interés, tasa cupón y tiempo del ejercicio. El precio se obtiene con la siguiente fórmula:
 
+<p>
 <img align="right" width="100" height="100" src="¡https://latex.codecogs.com/png.latex?P%20%3D%20%5Csum_%7Bi%3D1%7D%5En%20%5Cfrac%7BC%7D%7B%281&plus;r%29%5En%7D%20&plus;%20%5Cfrac%7BVN%7D%7B%281&plus;r%29%5En%7D">
-
+</p>
