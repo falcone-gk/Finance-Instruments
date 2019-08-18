@@ -68,7 +68,7 @@ En las primeras líneas se crean los instrumentos financieros, en este caso Acci
 
 Por útlimo se muestra la descripción del portafolio:
 
-Covarianza         : -0.036
+Covarianza         : -0.036 \n
 Rendimiento        :  0.235
 Varianza           : 0.0666
 Desviación estándar:  0.258
