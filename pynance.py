@@ -7,6 +7,8 @@ import scipy.optimize as sco
 import matplotlib.pyplot as plt
 import numpy as np
 
+plt.style.use("seaborn")
+
 class Portfolio:
     """Clase que contiene toda la cartera de activos"""
 
