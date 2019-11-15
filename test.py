@@ -1,30 +1,26 @@
-"""xº
+# coding=utf-8
+
+"""
 Script para hacer los test de la librería pynance.
 """
 
+import numpy as np
+import pandas as pd
 import pynance as fy
 
 def main():
-    """Realizar los test"""
-    #Características del instrumento A.
-    r_a = 0.1
-    sd_a = 0.12
+    """Main function"""
 
-    #Características del instrumeno B
-    r_b = 0.25
-    sd_b = 0.3
+    arrays = {}
+    for i in range(10):
+        arr = 0.05*np.random.random(100) - 0.02
+        arrays["serie_{0}".format(i)] = arr
 
-    #Peso del instrumento A en el portafolio
-    weights = 0.1
-    corr = -1
+    returns = pd.DataFrame(arrays, index=[i for i in range(100)])
 
-    stock_a = fy.Asset(r_a, sd_a)
-    stock_b = fy.Asset(r_b, sd_b)
-
-    portfolio = fy.Portfolio(stock_a, stock_b, weights, corr)
-    figure = portfolio.show_yields([-1, -0.75, -0.2, 0.4, 1])
-    figure.savefig("images/yields.png")
-    print(portfolio.description())
+    port = fy.Portfolio(returns)
+    port.efficient_frontier()
 
 if __name__ == "__main__":
     main()
+
