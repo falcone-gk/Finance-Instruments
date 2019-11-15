@@ -1,6 +1,7 @@
 """
-Creación de objetos financieros como los son los bonos y las acciones, además se crea
-el objeto Portfolio en el que se mostrará características básicas.
+Creación del objto Portafolio en el que se podrá obtener distintos valores como los pesos de
+cada acción para obtener tanto un cartera de mínimo riesgo, máxima varianza y aquella que
+maximiza el ratio de Sharpe.
 """
 
 import scipy.optimize as sco
